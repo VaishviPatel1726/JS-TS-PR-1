@@ -27,7 +27,7 @@ document.getElementById("Question3-ans").innerText = "Answer :" + (Question3v1 *
 // divide
 
 let Question4v1 = 20;
-let Question4v2 = 10;
+let Question4v2 = 0;
 
 document.getElementById("Question4").innerText = "Q-4. Write a program to divide two numbers and handle division by zero using conditional statements.";
 document.getElementById("Question4-value").innerText = "Value :" + Question4v1 + " & " + Question4v2;
@@ -92,3 +92,196 @@ document.getElementById("Question9-value").innerText = "Value : P=" + Question9v
 
 let si = (Question9v1 * Question9v2 * Question9v3) / 100;
 document.getElementById("Question9-ans").innerText = "Answer :" + si;
+
+// even or od
+
+let Question10v1 = 20;
+
+document.getElementById("Question10").innerText = "Q-10. Write a program to check whether a number is even or odd.";
+document.getElementById("Question10-value").innerText = "Value :" + Question10v1;
+
+if (Question10v1 % 2 === 0) {
+    document.getElementById("Question10-ans").innerText = "Answer : Even Number";
+} else {
+    document.getElementById("Question10-ans").innerText = "Answer : Odd Number";
+}
+
+// positive, negative, or zero
+
+let Question11v1 = 20;
+
+document.getElementById("Question11").innerText = "Q-11. Create a program to check whether a number is positive, negative, or zero.";
+document.getElementById("Question11-value").innerText = "Value :" + Question11v1;
+
+if (Question11v1 > 0) {
+    document.getElementById("Question11-ans").innerText = "Answer : Positive Number";
+} else if (Question11v1 < 0) {
+    document.getElementById("Question11-ans").innerText = "Answer : Negative Number";
+} else {
+    document.getElementById("Question11-ans").innerText = "Answer : Zero";
+}
+
+// largest of two numbers
+
+let Question12v1 = 20;
+let Question12v2 = 10;
+
+document.getElementById("Question12").innerText = "Q-12. Develop a program to find the largest of two numbers using if-else.";
+document.getElementById("Question12-value").innerText = "Value :" + Question12v1 + " & " + Question12v2;
+
+if (Question12v1 > Question12v2) {
+    document.getElementById("Question12-ans").innerText = "Answer : " + Question12v1 + " is Largest";
+} else if (Question12v2 > Question12v1) {
+    document.getElementById("Question12-ans").innerText = "Answer : " + Question12v2 + " is Largest";
+} else {
+    document.getElementById("Question12-ans").innerText = "Answer : Both numbers are equal";
+}
+
+// largest of three numbers
+
+let Question13v1 = 30;
+let Question13v2 = 20;
+let Question13v3 = 10;
+
+document.getElementById("Question13").innerText = "Q-13. Create a program to find the largest of three numbers using conditional statements.";
+document.getElementById("Question13-value").innerText = "Value :" + Question13v1 + " , " + Question13v2 + " , " + Question13v3;
+
+if (Question13v1 >= Question13v2 && Question13v1 >= Question13v3) {
+    document.getElementById("Question13-ans").innerText = "Answer : " + Question13v1 + " is Largest";
+} else if (Question13v2 >= Question13v1 && Question13v2 >= Question13v3) {
+    document.getElementById("Question13-ans").innerText = "Answer : " + Question13v2 + " is Largest";
+} else {
+    document.getElementById("Question13-ans").innerText = "Answer : " + Question13v3 + " is Largest";
+}
+
+// person is eligible for voting
+
+let Question14v1 = 20; 
+
+document.getElementById("Question14").innerText = "Q-14. Write a program to check whether a person is eligible for voting (age ≥ 18).";
+document.getElementById("Question14-value").innerText = "Age :" + Question14v1;
+
+if (Question14v1 >= 18) {
+    document.getElementById("Question14-ans").innerText = "Answer : Eligible for Voting";
+} else {
+    document.getElementById("Question14-ans").innerText = "Answer : Not Eligible for Voting";
+}
+
+// calculate grade
+
+let Question15v1 = 95; 
+
+document.getElementById("Question15").innerText = "Q-15. Develop a program to calculate grade based on marks.";
+document.getElementById("Question15-value").innerText = "Marks :" + Question15v1;
+
+if (Question15v1 >= 90) {
+    document.getElementById("Question15-ans").innerText = "Answer : Grade A";
+} else if (Question15v1 >= 75) {
+    document.getElementById("Question15-ans").innerText = "Answer : Grade B";
+} else if (Question15v1 >= 50) {
+    document.getElementById("Question15-ans").innerText = "Answer : Grade C";
+} else {
+    document.getElementById("Question15-ans").innerText = "Answer : Fail";
+}
+
+// given year is a leap year
+
+let Question16v1 = 2024; 
+
+document.getElementById("Question16").innerText = "Q-16. Write a program to check whether a given year is a leap year.";
+document.getElementById("Question16-value").innerText = "Year :" + Question16v1;
+
+if ((Question16v1 % 4 === 0 && Question16v1 % 100 !== 0) || (Question16v1 % 400 === 0)) {
+    document.getElementById("Question16-ans").innerText = "Answer : Leap Year";
+} else {
+    document.getElementById("Question16-ans").innerText = "Answer : Not a Leap Year";
+}
+
+// number is divisible by both 5 and 11\
+
+let Question17v1 = 55;
+
+document.getElementById("Question17").innerText = "Q-17. Create a program to check whether a number is divisible by both 5 and 11.";
+document.getElementById("Question17-value").innerText = "Value :" + Question17v1;
+
+if (Question17v1 % 5 === 0 && Question17v1 % 11 === 0) {
+    document.getElementById("Question17-ans").innerText = "Answer : Divisible by both 5 and 11";
+} else {
+    document.getElementById("Question17-ans").innerText = "Answer : Not divisible by both 5 and 11";
+}
+
+// addition, subtraction, multiplication, and division
+
+let Question18v1 = 20;
+let Question18v2 = 10;
+let operator = "*";  
+
+document.getElementById("Question18").innerText = "Q-18. Develop a simple calculator using switch statement to perform addition, subtraction, multiplication, and division.";
+document.getElementById("Question18-value").innerText = "Value :" + Question18v1 + " " + operator + " " + Question18v2;
+
+let result;
+
+switch (operator) {
+    case "+":
+        result = Question18v1 + Question18v2;
+        break;
+    case "-":
+        result = Question18v1 - Question18v2;
+        break;
+    case "*":
+        result = Question18v1 * Question18v2;
+        break;
+    case "/":
+        if (Question18v2 === 0) {
+            result = "Cannot divide by zero";
+        } else {
+            result = Question18v1 / Question18v2;
+        }
+        break;
+    default:
+        result = "Invalid Operator";
+}
+
+document.getElementById("Question18-ans").innerText = "Answer :" + result;
+
+// BMI and display the health category
+
+let Question19v1 = 70;   
+let Question19v2 = 1.7;  
+
+document.getElementById("Question19").innerText = "Q-19. Write a program to calculate BMI and display the health category.";
+document.getElementById("Question19-value").innerText = "Value : Weight=" + Question19v1 + "kg , Height=" + Question19v2 + "m";
+
+let bmi = Question19v1 / (Question19v2 * Question19v2);
+let category;
+
+if (bmi < 18.5) {
+    category = "Underweight";
+} else if (bmi >= 18.5 && bmi < 25) {
+    category = "Normal";
+} else if (bmi >= 25 && bmi < 30) {
+    category = "Overweight";
+} else {
+    category = "Obese";
+}
+
+document.getElementById("Question19-ans").innerText = "Answer : BMI = " + bmi.toFixed(2) + " (" + category + ")";
+
+// bill based on units consumed
+
+let Question20v1 = 250;  // units consumed
+
+document.getElementById("Question20").innerText = "Q-20. Create a program to calculate electricity bill based on units consumed.";
+document.getElementById("Question20-value").innerText = "Units :" + Question20v1;
+
+let bill;
+
+if (Question20v1 <= 100) {
+    bill = Question20v1 * 5;
+} else if (Question20v1 <= 200) {
+    bill = (100 * 5) + ((Question20v1 - 100) * 7);
+} else {
+    bill = (100 * 5) + (100 * 7) + ((Question20v1 - 200) * 10);
+}
+
+document.getElementById("Question20-ans").innerText = "Answer : ₹" + bill;
